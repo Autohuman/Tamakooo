@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+/*Header*/
+.haoHeader{
+  background: linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5)),url(back.jpg) center;
+  background-size: cover;
+  height: 100vh;
+}
+.haoNav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  line-height: 25px;
+  z-index: 9999;
+}
+.haoNav ul{
+  float: right;
+  margin: 0;
+  padding-right: 42px;
+}
+.haoNav ul li{
+  display: inline-block;
+  padding: 16px 32px;
+}
+.haoNav ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.haoNav .navLogo{
+  height: 48px;
+  float: left;
+  margin: 8px 48px;
+}
+.navToBlack{
+  background: rgba(0, 0, 0, 0.85);
+}
+.h1Title{
+  margin-top: 0;
+  font-size: 48px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 350px;
+  color: #FFFFFF;
+}
+/*sidebar*/
+.sidebar{
+  position: absolute;
+  left: -278px;
+  top: 15%;
+}
+.sidebar .projects{
+  text-align: center;
+  background-color: #344d80;/*#344d80*/
+  border: 1px solid #000;
+  width: 350px;
+  border-radius: 1px;
+  line-height: 40px;
+  padding-left: 15px;
+  transition: transform 0.5s;
+}
+.sidebar .projects:hover{
+  transform: translateX(278px);
+}
+.sidebar .projects a{
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+}
+.sidebar .projects .title{
+  color: #FFF;
+  position: absolute;
+  right: 15px;
+  font-size: large;
+}
+/*Description*/
+.description{
+  width: 80%;
+  margin: 50px auto;
+}
+.contentP{
+  font-size: 18px;
+  line-height: 28px;
+  color: #333;
+  text-align: justify;
+}

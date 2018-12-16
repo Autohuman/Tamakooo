@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tamakooo's Kingdom</title>
+    <link href="index/index.css"  type="text/css" rel="stylesheet"/>
+    <link href='http://fonts.font.im/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="haoHeader">
+  <nav class="haoNav">
+    <a href="http://www.tamakooo.com">
+        <img class="navLogo" src="index/RinShima.jpg" />
+    </a>
+    <div class="haoMenu">
+      <ul>
+        <li><a href="http://tamakomarket.wikia.com/wiki/Tamako_Kitashirakawa">Tamako</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Laid-Back_Camp">Rin Shima</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Is_the_Order_a_Rabbit%3F">Kafuu Chino</a></li>
+        <li><a href="https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%9D%E3%81%B3%E3%81%82%E3%81%9D%E3%81%B0%E3%81%9B">あそびあそばせ</a></li>
+        <li><a href="https://www.pixiv.net/">Pivix</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <h1 class="h1Title">Welcome To Tamakooo's Kingdom</h1>
+</header>
+<div class="sidebar">
+  <div class="projects">
+    <a href="http://www.tamakooo.com/qunxing/">QunXing-Physical-Exam</a>
+    <span class="title">Project1</span>
+  </div>
+  <div class="projects">
+      <a href="http://www.tamakooo.com/shoppingCart/">Shopping-Cart</a>
+      <span class="title">Project2</span>
+  </div>
+  <div class="projects">
+      <a href="https://github.com/Autohuman">AutoHuman</a>
+      <span class="title">GitHub</span>
+  </div>
+</div>
+<div class="description">
+  <p class="contentP">Personal Website,Novice Practice,No deliberately destory,Thanks</p>
+  <p class="contentP">個人網站，新手練習，請不要蓄意破壞，謝謝</p>
+  <p class="contentP">個人的なウェブサイト、初心者の練習、意図的に破壊、ありがとう</p>
+  <p class="contentP">Contact Me: a2788039381@gmail.com</p>
+</div>
+<script type="text/javascript">
+  $(window).on("scroll",function(){
+    if ($(window).scrollTop()) {
+      $('nav').addClass('navToBlack');
+    }
+    else {
+      $('nav').removeClass('navToBlack');
+    }
+  });
+  $(".projects").on({
+      "mouseenter": function() {$(this).children(".title").fadeOut(300);},
+      "mouseleave": function() {$(this).children(".title").fadeIn(300);}
+  });
+</script>
+</body>
+</html>
