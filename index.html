@@ -2,54 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tamakooo's Kingdom</title>
+    <title>HaoKeee's Kingdom</title>
     <link href="index/index.css"  type="text/css" rel="stylesheet"/>
     <link href='http://fonts.font.im/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header class="haoHeader">
   <nav class="haoNav">
-    <a href="http://www.tamakooo.com">
-        <img class="navLogo" src="index/RinShima.jpg" />
+    <a href="http://www.haokeee.club">
+        <img class="navLogo" src="index/logo.png" />
     </a>
     <div class="haoMenu">
       <ul>
-        <li><a href="http://tamakomarket.wikia.com/wiki/Tamako_Kitashirakawa">Tamako</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Laid-Back_Camp">Rin Shima</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/Is_the_Order_a_Rabbit%3F">Kafuu Chino</a></li>
-        <li><a href="https://ja.wikipedia.org/wiki/%E3%81%82%E3%81%9D%E3%81%B3%E3%81%82%E3%81%9D%E3%81%B0%E3%81%9B">あそびあそばせ</a></li>
-        <li><a href="https://www.pixiv.net/">Pivix</a></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.baidu.com/">Baidu</a></li>
+        <li><a href="https://www.google.com/">C</a></li>
+        <li><a href="https://www.google.com/">D</a></li>
+        <li><a href="https://www.google.com/">E</a></li>
       </ul>
     </div>
-
   </nav>
-  <h1 class="h1Title">Welcome To Tamakooo's Kingdom</h1>
+  <h1 class="h1Title">Welcome To HaoKeee's Kingdom</h1>
 </header>
-<div class="sidebar">
-  <div class="projects">
-    <a href="http://www.tamakooo.com/qunxing/">QunXing-Physical-Exam</a>
-    <span class="title">Project1</span>
+<div class="leftsidebar">
+  <div class="tags">
+    <a href="./notes/数据库系统概论.html">数据库系统概论</a>
+    <span class="title">Note-1</span>
   </div>
-  <div class="projects">
-      <a href="http://www.tamakooo.com/shoppingCart/">Shopping-Cart</a>
-      <span class="title">Project2</span>
+  <div class="tags">
+      <a href="./notes/数据库系统概论.html">Python</a>
+      <span class="title">Note-2</span>
   </div>
-  <div class="projects">
-      <a href="https://github.com/Autohuman">AutoHuman</a>
+  <div class="tags">
+      <a href="./notes/">Notes</a>
+      <span class="title">Notes</span>
+  </div>
+</div>
+<div class="rightsidebar">
+  <div class="tags">
+    <a href="http://juyixi.weekbin.icu/">国内外新闻聚合</a>
+    <span class="title">Project-1</span>
+  </div>
+  <div class="tags">
+      <a href="./Word-Fuzzy-Query/">考研词汇模糊查询</a>
+      <span class="title">Project-2</span>
+  </div>
+  <div class="tags">
+      <a href="https://github.com/HaoKeee">HaoKeee</a>
       <span class="title">GitHub</span>
   </div>
 </div>
 <div class="description">
   <p class="contentP">Personal Website,Novice Practice,No deliberately destory,Thanks</p>
+  <p class="contentP">个人网站，新手练习，请不要恶意攻击，谢谢</p>
   <p class="contentP">個人網站，新手練習，請不要蓄意破壞，謝謝</p>
-  <p class="contentP">個人的なウェブサイト、初心者の練習、意図的に破壊、ありがとう</p>
-  <p class="contentP">Contact Me: a2788039381@gmail.com</p>
+  <p class="contentP">Contact Me: 2788039381@qq.com</p>
 </div>
+</body>
 <script type="text/javascript">
   $(window).on("scroll",function(){
     if ($(window).scrollTop()) {
@@ -59,10 +70,9 @@
       $('nav').removeClass('navToBlack');
     }
   });
-  $(".projects").on({
+  $(".tags").on({
       "mouseenter": function() {$(this).children(".title").fadeOut(300);},
       "mouseleave": function() {$(this).children(".title").fadeIn(300);}
-  });
+    });
 </script>
-</body>
 </html>

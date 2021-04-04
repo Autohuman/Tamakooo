@@ -47,15 +47,26 @@ body{
   padding-top: 350px;
   color: #FFFFFF;
 }
-/*sidebar*/
-.sidebar{
+/*left and right sidebar*/
+.leftsidebar{
   position: absolute;
   left: -278px;
   top: 15%;
 }
-.sidebar .projects{
+.leftsidebar .tags:hover{
+  transform: translateX(278px);
+}
+.rightsidebar{
+  position: absolute;
+  right: -250px;
+  top: 15%;
+}
+.rightsidebar .tags:hover{
+  transform: translateX(-250px);
+}
+.leftsidebar .tags,.rightsidebar .tags{
   text-align: center;
-  background-color: #344d80;/*#344d80*/
+  background-color: #344d80;
   border: 1px solid #000;
   width: 350px;
   border-radius: 1px;
@@ -63,19 +74,21 @@ body{
   padding-left: 15px;
   transition: transform 0.5s;
 }
-.sidebar .projects:hover{
-  transform: translateX(278px);
-}
-.sidebar .projects a{
+.leftsidebar .tags a,.rightsidebar .tags a{
   display: inline-block;
   text-decoration: none;
   color: #FFF;
 }
-.sidebar .projects .title{
+.tags .title{
   color: #FFF;
   position: absolute;
-  right: 15px;
   font-size: large;
+}
+.leftsidebar .tags .title{
+  right: 15px;
+}
+.rightsidebar .tags .title{
+  left: 25px;
 }
 /*Description*/
 .description{
